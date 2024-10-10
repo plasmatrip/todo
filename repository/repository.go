@@ -25,7 +25,7 @@ type Repository struct {
 	db *sql.DB
 }
 
-func NewToDo() *Repository {
+func NewRepo() *Repository {
 	return &Repository{db: open()}
 }
 

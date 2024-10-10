@@ -22,7 +22,7 @@ func main() {
 	defer configs.StopLog()
 
 	log.Println("инициализирую базу данных /db/scheduller.db")
-	db := repository.NewToDo()
+	db := repository.NewRepo()
 	defer db.Close()
 
 	log.Println("запускаю роутер запросов")
